@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#001621" />
+    <title>Arslan Agayev · terminal</title>
+    <meta
+      name="description"
+      content="Arslan Agayev's portfolio as a terminal: type help, projects or contact. Computer Science student, open to 2027 internships."
+    />
+    <meta property="og:title" content="Arslan Agayev · terminal" />
+    <meta
+      property="og:description"
+      content="My portfolio as a terminal. Type help, projects or contact."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="desk">
+      <section class="window" aria-label="Terminal">
+        <header class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <h1 class="title">guest@arslan: ~</h1>
+          <span class="tag" aria-hidden="true">zsh</span>
+        </header>
+
+        <div class="screen" data-screen>
+          <noscript>
+            <p>
+              This portfolio runs in JavaScript. Without it:
+              <a href="https://github.com/arslanagayev">github.com/arslanagayev</a> ·
+              <a href="mailto:arslanagayew39@gmail.com">arslanagayew39@gmail.com</a>
+            </p>
+          </noscript>
+          <div
+            class="log"
+            data-log
+            role="log"
+            aria-live="polite"
+            aria-label="Terminal output"
+          ></div>
+          <form class="prompt-row" data-form>
+            <label class="prompt" for="command">guest@arslan:~$</label>
+            <div class="field">
+              <input
+                id="command"
+                data-input
+                type="text"
+                autocomplete="off"
+                autocapitalize="off"
+                autocorrect="off"
+                spellcheck="false"
+                enterkeyhint="go"
+                aria-describedby="hint"
+              />
+              <span class="ghost" data-ghost aria-hidden="true"></span>
+            </div>
+          </form>
+          <p id="hint" class="sr-only">
+            Type a command and press Enter. Tab completes, arrow keys browse history.
+          </p>
+        </div>
+
+        <nav class="chips" aria-label="Quick commands">
+          <button type="button" data-command="help">help</button>
+          <button type="button" data-command="about">about</button>
+          <button type="button" data-command="projects">projects</button>
+          <button type="button" data-command="skills">skills</button>
+          <button type="button" data-command="contact">contact</button>
+          <button type="button" data-command="clear">clear</button>
+        </nav>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
